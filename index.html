@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O meu Portefolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div id="language-selection">
+        <button onclick="selectLanguage('pt')">Português</button>
+        <button onclick="selectLanguage('en')">English</button>
+    </div>
+    <nav id="desktop-nav">
+        <div class="logo">António Santos</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contactos">Contactos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="nav-hamburguer">
+        <div class="logo">António Santos</div>
+        <div class="menu-hamburguer">
+            <div class="icon-hamburguer"  onclick="abrirMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#sobre" onclick="abrirMenu()">Sobre Mim</a></li>
+                    <li><a href="#habilidades" onclick="abrirMenu()">Habilidades</a></li>
+                    <li><a href="#projetos" onclick="abrirMenu()">Projetos</a></li>
+                    <li><a href="#contactos" onclick="abrirMenu()">Contactos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <section id="perfil">
+        <div class="section_pic-container">
+            <img src="./assets/profilepic.png" alt="António Santos">
+        </div>
+        <div class="section_texto">
+            <p class="section_texto_p1">Olá, eu sou</p>
+            <h1 class="title">António Santos</h1>
+            <p class="section_texto_p2">Desenvolvedor Web</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_AntonioS2023.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contactos'">Contactos</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="Perfil LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/antonio2antos/'">
+                <img src="./assets/github.png" alt="Perfil GitHub" class="icon" onclick="location.href='https://github.com/Antonio2antos'">
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <p class="section_texto_p1">Fica a saber mais</p>
+        <h1 class="title">Sobre mim</h1>
+        <div class="section-container">
+           <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="foto de perfil" class="about-pic">
+           </div> 
+           <div class="sobre-details-container">
+            <div class="sobre-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="icon experiencia"  class="icon">
+                    <h3>experiencia</h3>
+                    <p>2+ Anos <br> Desenvolvimento Software</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="icon educacao"  class="icon">
+                    <h3>Educação</h3>
+                    <p>Engenharia Informática <br> Universidade Aberta<br> em progresso</p>
+            </div>
+           </div>
+           <div class="texto-container">
+            <p>Olá, eu sou António Santos, estou a estudar desenvolvimento web, tenho mais de 2 anos de experiência em desenvolvimento de software. Estou a estudar Engenharia Informática na Universidade Aberta. Estou sempre à procura de novos desafios e oportunidades para aprender e crescer. </p>
+           </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow_icon" class="arrow" onclick="location.href='./#habilidades'">
+    </section>
+    <section id="habilidades">
+        <p class="section_texto_p1">O que eu faço</p>
+        <h1 class="title">Habilidades</h1>
+        <div class="habilidades-container">
+            <div class="sobre-container">
+               <div class="details-container">
+                <h2 class="subtitulo-experiencia">Frontend Development</h2>
+                <div class="artigo-container"></div>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Conhecimento básico</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Conhecimento básico</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Javasript</h3>
+                            <p>Conhecimento básico</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Typescript</h3>
+                            <p>Conhecimento básico</p>
+                        </div>
+                    </article>
+                  
+               </div>
+            </div>
+            <div class="details-container">
+                <h2 class="subtitulo-experiencia">Outras linguagens de Programação</h2>
+                <div class="artigo-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Conhecimento avançado</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="experience icon" class="icon"/>
+                        <div>
+                            <h3>C</h3>
+                            <p>Conhecimento intermédio</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow_icon" class="arrow" onclick="location.href='./#projetos'">
+    </section>
+    <section id="projetos">
+        <p class="section_texto_p1">O que eu fiz</p>
+        <h1 class="title">Projetos</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="artigo-container">
+                    <img src="assets/project-1.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="subtitulo-experiencia titulo-projeto">Task App python</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                        Live demo
+                        </button>
+            </div>
+        </div>
+            <div class="details-container color-container">
+                <div class="artigo-container">
+                    <img src="assets/project-2.png" alt="project 2" class="project-img">
+                </div>
+                <h2 class="subtitulo-experiencia titulo-projeto">Formulário HTML CSS</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://github.com/'">
+                        Live demo
+                        </button>
+            </div>
+        </div>
+            <div class="details-container color-container">
+                <div class="artigo-container">
+                    <img src="assets/project-3.png" alt="project 3" class="project-img">
+                </div>
+                <h2 class="subtitulo-experiencia titulo-projeto">Javasript</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='https://https://github.com/Antonio2antos/HTML-CSS-JAVASCRIPT'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='https://https://github.com/Antonio2antos/HTML-CSS-JAVASCRIPT'">
+                        Live demo
+                        </button>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow_icon" class="arrow" onclick="location.href='./#contactos'">
+        </section>
+        <section id="contactos">
+            <p class="section_texto_p1">Onde estou</p>
+            <h1 class="title">Contacta-me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contacto-info-container">
+                    <img src="./assets/email.png" alt="email icon" class="icon contacto-icon">
+                    <p><a href="mailto:antonio.santos2467@gmail.com">antonio.santos2467@gmail.com</a></p>
+                </div>
+                <div class="contacto-info-container">
+                    <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contacto-icon">
+                    <p><a href="https://www.linkedin.com/in/antonio2antos/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#sobre" onclick="abrirMenu()">Sobre Mim</a></li>
+                        <li><a href="#habilidades" onclick="abrirMenu()">Habilidades</a></li>
+                        <li><a href="#projetos" onclick="abrirMenu()">Projetos</a></li>
+                        <li><a href="#contactos" onclick="abrirMenu()">Contactos</a></li>
+                    </ul>  
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 António Santos. Todos os direitos reservados</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
